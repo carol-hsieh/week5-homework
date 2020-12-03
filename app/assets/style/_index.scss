@@ -1,0 +1,56 @@
+main{
+    min-width: 920px;
+}
+
+// main-Top
+.topSection{
+    margin-bottom: 6px;
+}
+.headerItem{
+    padding-left: 26px;
+}
+.font-size-sm{
+    font-size: 0.75rem;
+}
+
+// main-content
+.firstStudent, .fileButton{
+    margin-bottom: 16.5px;
+}
+.firstContent{
+    border-bottom: 1px solid #CDDDCD;
+}
+
+.fileDownload{
+    margin: 0;
+    padding: 10px;
+}
+.advices a{
+    color:green;
+}
+
+.card-body{
+    ul{
+        margin-bottom: 0;
+    }
+}
+code{
+    color:#2A8356;
+    background: #EDF4EE;
+}
+.pages{
+    padding-top: 22px;
+}
+
+.card-bod{
+    padding: 0px;
+}
+.textReplycard{
+    border: 1px solid #CDDDCD;
+}
+
+textarea{
+    border-color: transparent;
+    width: 100%;
+    
+ }

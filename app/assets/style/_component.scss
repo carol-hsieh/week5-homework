@@ -1,0 +1,147 @@
+// course 下拉選單
+
+// 首頁
+.allFour{
+    padding: 0;
+    font-weight: 500;
+}
+.moreBtn span{
+    color: #000 !important;
+}
+
+.assignmentSection{
+    padding-right: 0;
+    a{
+        padding: 12px;
+    }
+    small{
+        color:#000;
+    }
+    .name{
+        color:#0000009A;
+    }
+}
+
+// 內頁 互動視窗表單
+// Edit Admin 編輯視窗
+.accountTitle{
+    margin-bottom: 24.5px;
+}
+.accountList{
+    label{
+        font-size: 14px;
+    }
+    input{
+        background: #EDF4EE;
+        border:none;
+        font-size: 1rem;
+        width: 100%;
+    }
+}
+
+.verifieTitle{
+    padding-top: 24.5px;
+    border-top: 1px solid #CDDDCD;
+    p, span{font-size: 1rem;}
+    button{
+        font-size: 1rem;
+        color:#CDDDCD;
+        background-color: #FFF;
+        border-radius: 0.2rem !important;
+        border: 1px solid #CDDDCD !important;
+    }
+}
+.accessTitle,.customAccessTitle,.deactivateTitle{
+    padding-top: 24.5px;
+    border-top: 1px solid #CDDDCD;
+}
+
+.customAccessTitle{
+    label{
+        font-size: 1rem;
+    }
+    input{
+        width: 20px;
+        height: 20px;
+    }
+}
+.deactivateTitle{
+    p{
+        margin: 0;
+    }
+    font-size: 1rem;
+    .waringText {
+        margin-bottom: 19px;
+    }
+    button{
+        color:$warning;
+        background-color: #FFF;
+        border-radius: 0.2rem !important;
+        border: 1px solid #e83e8c !important;
+    }
+}
+
+// 內頁 user互動視窗編輯表單
+.userInfo{
+    background-image: url(../images/emir.jpeg);
+    width: 141px;
+    height: 141px;
+    background-size: cover;
+    background-position: cover;
+}
+.user-content{
+    padding:0;
+   p{
+     margin: 0;  
+   } 
+}
+.user-verifiedButton{
+    // margin-top: 20px;
+    width: 250px;
+    background-color: #FFF;
+    border-radius: 0.2rem !important;
+    border: 1px solid #CDDDCD !important
+
+}
+ 
+.user-card-body{
+    display: flow-root;
+    border:none;
+}
+.warning-cardButton{
+    color: #e83e8c;
+    background-color: #FFF;
+    border-radius: 0.2rem !important;
+    border: 1px solid #e83e8c !important;
+}
+
+
+// 按鈕
+
+// 首頁 按鈕
+.fileButton{
+        border: 1px solid #CDDDCD !important;
+        border-radius: 0.2rem !important;
+    }
+
+
+.btn-outline-primary{
+    color: #2A8356;
+    border-color:#2A8356;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #2A8356;
+    border-color: #2A8356;
+}
+
+// 內頁 按鈕
+.addBn{
+    background: #fff;
+    color:#000;
+    border: none;
+}
+.addBn:hover{
+    background: #fff;
+}
+

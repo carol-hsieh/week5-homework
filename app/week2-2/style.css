@@ -1,0 +1,256 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+body {
+	font-family: "Roboto";
+}
+
+/* read-color */
+.rdCr{
+    color: white;
+}
+/* read-content */
+.rdCt{
+    font-weight: 900;
+    text-align: center;
+}
+
+/* font-size */
+
+.fz1{
+    font-size: 20px;
+}
+.fz2{
+    font-size: 24px;
+}
+
+/* line-height */
+
+.lh1{
+    line-height: 30px;
+}
+.lh2{
+    line-height: 36px;
+}
+.lh3{
+    line-height: 42px;
+}
+
+/* margin */
+
+.mb1{
+    margin-bottom: 8px;
+}
+.mb2{
+    margin-bottom: 16px;
+}
+.mb3{
+    margin-bottom: 24px;
+}
+.mb4{
+    margin-bottom: 32px;
+}
+.mb5{
+    margin-bottom: 40px;
+}
+.mb6{
+    margin-bottom: 48px;
+}
+.mb7{
+    margin-bottom: 56px;
+}
+.mb8{
+    margin-bottom: 68px;
+}
+
+.mt1{
+    margin-top: 40px;
+}
+
+.mf1{
+    margin-left: 24px;
+}
+/* padding */
+.pd1{
+    padding-bottom: 24px;
+}
+.pd2{
+    padding-top: 24px;
+}
+
+/* title */
+h1{
+    font-size: 80px;
+    line-height: 94px;
+    font-weight: bold;
+    color: white;
+} 
+
+h2{
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* bg-photo */ 
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week2/banner.png?raw=true);
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 64px;
+    height: 958px;
+    border: 1px solid #707070;
+}
+.banner{
+    margin: 0 auto;
+    width: 304px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.banner span{
+    font-weight: bold;
+    text-align: left;
+}
+
+.icon{
+    display: flex;
+}
+
+.icon a{
+    padding-right: 16px;
+}
+.icon img:hover{
+    border-radius: 30%;
+    box-shadow: 0px 0px 15px white;
+}
+/* about  */
+
+.about{
+    width: 412px;
+    margin: 0 auto;
+}
+.border{
+    border-bottom: 1px solid black;
+}
+.list-style{
+    position: relative;
+  }
+.list-style li::before{
+    content: "";
+    background-color: #891818;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(40%);
+    margin-left: -38px;
+}
+
+/* brand */
+.brand{
+    background-color: black;
+    text-align: center;
+}
+
+.brand-container{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 64px;
+    padding-bottom: 160px;
+}
+.brand-photo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+/* work */
+.work-container{
+    width: 1200px;
+    margin: 0 auto; 
+    padding-top: 64px;
+    padding-bottom: 160px;  
+}
+
+.work-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.work-img span{
+    font-size: 20px;
+    line-height: 42px;
+}
+
+/* footer */
+
+.footer{
+    background-color: black;
+    padding-top: 64px;
+    padding-bottom: 80px;
+}
+.contact-list a{
+    text-decoration: none;
+    color: white;
+}
+.contact-list a:hover{
+    font-size: 30px;
+    color:gray;
+}
