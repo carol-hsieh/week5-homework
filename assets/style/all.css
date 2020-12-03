@@ -9415,4 +9415,11 @@ textarea {
 .addBn {
   margin-left: 0px; }
 
+.page-link {
+  color: green;
+  border-color: green; }
+  .page-link:hover {
+    color: #fff;
+    background-color: green; }
+
 /*# sourceMappingURL=all.css.map */
