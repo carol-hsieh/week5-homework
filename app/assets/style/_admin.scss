@@ -1,3 +1,11 @@
 .addBn{
     margin-left: 0px;
 }
+.page-link{
+    color:green;
+    border-color: green;
+    &:hover{
+        color:#fff;
+        background-color: green;
+    }
+}
