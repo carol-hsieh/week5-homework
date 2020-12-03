@@ -1,0 +1,1 @@
+{"version":3,"sources":["all.js"],"names":[],"mappings":"AACA;AACA;AACA;AACA;AACA","file":"all.js","sourcesContent":["\n// $(document).ready(function(){\n//   $(\".textReply\").click(function(){\n//   $(\".textReplycard\").toggleClass(\"active\");   \n//     });\n//   });\n"]}

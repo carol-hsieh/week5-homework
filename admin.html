@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>內頁</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./assets/style/all.css">
+
+</head>
+
+<body>
+  <div class="container-fluid d-flex">
+    <!-- navbar -->
+    <aside class="row ">
+        <nav class="bar d-flex  flex-column justify-content-between py-8 " >
+         <div>
+          <h1 class="d-flex pl-8 mb-4 "><a href="#" class="logo">ANSWER</a></h1>
+          <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a class="nav-link pl-8 " href="#"><span class="material-icons">
+                  insert_chart
+                  </span>  Dashboard</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link pl-8 " href="#"><span class="material-icons">
+                  forum
+                  </span> Question</a>
+              </li>
+              <li class="nav-item mb-2 border-left ">
+                <a class="nav-link pl-8 activeItem" href="#"><span class="material-icons">
+                  assignment
+                  </span> Assignment</a>
+              </li>
+              <li class="nav-item mb-2">
+                  <a class="nav-link pl-8 " href="#"><span class="material-icons">
+                      video_library
+                      </span>Course</a>
+                </li>
+              <li class="nav-item mb-2">
+                  <a class="nav-link pl-8 " href="#"><span class="material-icons">
+                      supervisor_account
+                      </span>Admin</a>
+              </li>
+              <li class="nav-item mb-2">
+                  <a class="nav-link pl-8 " href="#"><span class="material-icons">
+                      settings
+                      </span>Settings</a>
+              </li>
+          </ul>
+         </div>
+         <div class="d-flex ml-8">
+            <img class="avatar rounded-circle mr-6" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true" alt="andy-photo">   
+            
+            <div class="character">
+                <h3>Andy Chen</h3>
+                <p>andy0401@mail.com</p>
+            </div>
+         </div>
+    </nav></aside>
+
+  <main class="ml-8 w-100 py-8">
+    <header class="mb-8">
+    <div class="d-flex justify-content-between">
+    <h2>Admin
+        <!-- Button trigger modal -->
+    <button type="button" class="addBn btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    <span class="material-icons pr-2 text-primary" aria-hidden="">add</span>
+    <span>Add New Admin</span>  
+    </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">   
+            <div class="modal-header">
+          <h2 class="modal-title font-weight-bold " id="exampleModalCenterTitle">Edit Admin</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+            </div>
+            <div class="modal-body">
+                <form class="accountTitle" action="">
+            <h5 class="font-weight-bold">Account</h5>
+            <div class="accountList" >
+                <label class="accountName" for="">Name</label> <br>
+                <input type="text" class="py-4 pl-4" id="name" placeholder="Emir Wicks" >   
+            </div>
+            <div class="accountList borderBm">
+                <label class="accountEmail" for="">Email</label> <br>
+                <input type="text" class="py-4 pl-4" id="name" placeholder="emir.wicks@mail.com" >   
+            </div>
+                </form>
+                <div class="verifieTitle ">
+            <h5 class="font-weight-bold">Verification</h5>
+            <div class="d-flex justify-content-between">
+            <p class="font-weight-bold">Verified</p>
+            <span>2020/4/12</span>    
+            </div>
+            <button class="w-100 py-4 btn-success">Send Verification Mail</button>
+                </div>
+                <div class="accessTitle">
+            <h5>Access Level</h5>
+            <div class="access">
+                <div class="dropdownAccess ">
+                    <button class="btn w-100 d-flex justify-content-between" type="button" id="dropdownAccessButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        choose access level
+                        <span class="material-icons ">expand_more</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownAccessButton" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(461px, 70px, 0px);">
+                      <a class="dropdown-item" href="#">1</a>
+                      <a class="dropdown-item" href="#">2</a>
+                      <a class="dropdown-item" href="#">3</a>
+                    </div>
+                </div>              
+            </div>
+                </div>
+                <div class="customAccessTitle">
+            <h5 class="font-weight-bold">Custom Access</h5>
+            <div class="d-flex ">
+             <input type="checkbox">
+             <label for="" class="ml-2 mb-4">Lecture</label>
+            </div>
+            <div class="d-flex ">
+                <input type="checkbox">
+                <label for="" class="ml-2 mb-4">Coupon</label>
+            </div>
+            <div class="d-flex ">
+                <input type="checkbox">
+                <label for="" class="ml-2 mb-4">Message</label>
+            </div>
+            <div class="d-flex ">
+                <input type="checkbox">
+                <label for="" class="ml-2 mb-4">Setting</label>
+            </div>
+            <div class="d-flex ">
+                <input type="checkbox">
+                <label for="" class="ml-2 mb-4">Task menu</label>
+            </div>
+                </div>
+                <div class="deactivateTitle ">
+            <h5 class="font-weight-bold">Deactivate Account</h5>
+            <div class="waringText d-flex align-items-center">
+            <span class="material-icons mr-2 align-top text-warning">warning</span>
+            <p>This cannot be undone!</p>
+            </div>
+            <button class="w-100 py-4 btn-warning">Deactivate This Account</button>
+           
+                </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </h2>
+    <div class="d-flex ">
+        <div>
+            <a class="" type="submit">
+             <span class="material-icons align-bottom">search</span>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="headerItem my-2 my-lg-0 notifications">
+            <span class="material-icons">notifications_active</span>
+            </a>
+        </div>
+    </div>    
+    </div>  
+    </header>
+    
+    
+    <!-- 表單 -->
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID
+                <span class="material-icons text-third">
+                    arrow_downward
+                </span>
+            </th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Verified</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">#1</th>
+            <td>Emir Wicks</td>
+            <td>emir.wicks@mail.com</td>
+            <td>Yes</td>
+            <td > 
+                <!--  td Button trigger modal -->
+            <button type="button" class="verifiedview btn " data-toggle="modal" data-target="#verifiedviewModalCenter">
+            <span class="material-icons">visibility</span>
+            </button>
+  
+             <!-- Modal -->
+            <div class="modal fade" id="verifiedviewModalCenter" tabindex="-1" role="dialog" aria-labelledby="verifiedviewModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content d-flex">
+                    <div class="container-fluid">
+                    <div class="row">
+                        <div class="userInfo col-4 my-8  ml-6 mr-6"></div>
+                        <div class="user-content col-6 my-8 mr-6">
+                        <div class="d-flex align-items-center justify-content-between">
+                        <div>#1</div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <P>Admin</P>
+                    <h2 class="user-name">Emir Wicks</h2>
+                    <a class="user-email" href="mailto:emir.wicks@mail.com">emir.wicks@mail.com</a>
+                    <button class="btn user-verifiedButton d-flex justify-content-between py-1 mb-8" type="button" data-toggle="collapse" data-target="#multiCollapse-user" aria-expanded="false" aria-controls="multiCollapse-user">verified <span class="material-icons ">expand_more</span></button>
+                      <div>
+                          <div class="collapse multi-collapse" id="multiCollapse-user">
+                            <div class="card user-card-body d-flex flex-row justify-content-between">
+                                <button type="button" class="warning-cardButton btn btn-secondary px-8" data-dismiss="modal">Deactivate</button>
+                                <button type="button" class="btn btn-primary px-8">Edit</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+        </div>   
+              </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="addBn btn btn-primary" data-toggle="modal" data-target="#addBnModalCenter">
+                    <span class="material-icons">edit</span>
+                </button>
+              <!-- Modal -->
+              <div class="modal fade" id="addBnModalCenter" tabindex="-1" role="dialog" aria-labelledby="addBnModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title font-weight-bold " id="addBnModalCenterTitle">Edit Admin</h2>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                    <form class="accountTitle" action="">
+                        <h5 class="font-weight-bold">Account</h5>
+                        <div class="accountList" >
+                            <label class="accountName" for="">Name</label> <br>
+                            <input type="text" class="py-4 pl-4" id="name" placeholder="Emir Wicks" >   
+                        </div>
+                        <div class="accountList borderBm">
+                            <label class="accountEmail" for="">Email</label> <br>
+                            <input type="text" class="py-4 pl-4" id="name" placeholder="emir.wicks@mail.com" >   
+                        </div>
+                    </form>
+                    <div class="verifieTitle ">
+                        <h5 class="font-weight-bold">Verification</h5>
+                        <div class="d-flex justify-content-between">
+                        <p class="font-weight-bold">Verified</p>
+                        <span>2020/4/12</span>    
+                        </div>
+                        <button class="w-100 py-4 btn-success">Send Verification Mail</button>
+                    </div>
+                    <div class="accessTitle">
+                        <h5>Access Level</h5>
+                        <div class="access">
+                            <div class="dropdownAccess ">
+                                <button class="btn w-100 d-flex justify-content-between" type="button" id="dropdownAccessButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    choose access level
+                                    <span class="material-icons ">expand_more</span>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownAccessButton" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(461px, 70px, 0px);">
+                                  <a class="dropdown-item" href="#">1</a>
+                                  <a class="dropdown-item" href="#">2</a>
+                                  <a class="dropdown-item" href="#">3</a>
+                                </div>
+                            </div>              
+                        </div>
+                    </div>
+                    <div class="customAccessTitle">
+                        <h5 class="font-weight-bold">Custom Access</h5>
+                        <div class="d-flex ">
+                         <input type="checkbox">
+                         <label for="" class="ml-2 mb-4">Lecture</label>
+                        </div>
+                        <div class="d-flex ">
+                            <input type="checkbox">
+                            <label for="" class="ml-2 mb-4">Coupon</label>
+                        </div>
+                        <div class="d-flex ">
+                            <input type="checkbox">
+                            <label for="" class="ml-2 mb-4">Message</label>
+                        </div>
+                        <div class="d-flex ">
+                            <input type="checkbox">
+                            <label for="" class="ml-2 mb-4">Setting</label>
+                        </div>
+                        <div class="d-flex ">
+                            <input type="checkbox">
+                            <label for="" class="ml-2 mb-4">Task menu</label>
+                        </div>
+                    </div>
+                    <div class="deactivateTitle ">
+                        <h5 class="font-weight-bold">Deactivate Account</h5>
+                        <div class="waringText d-flex align-items-center">
+                        <span class="material-icons mr-2 align-top text-warning">warning</span>
+                        <p>This cannot be undone!</p>
+                        </div>
+                        <button class="w-100 py-4 btn-warning">Deactivate This Account</button>
+                    </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                      <button type="button" class="btn btn-primary">Update</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                </button></td>
+          </tr>
+          <tr>
+            <th scope="row">#2</th>
+            <td>Zaina Goldsmith</td>
+            <td>zaina.goldsmith@mail.com</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">#3</th>
+            <td>Mahima Lopez</td>
+            <td>Mahima.Lopez@mail.com</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">#4</th>
+            <td>Pharrell Murray</td>
+            <td>Pharrell.Murray@mail.com/td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">#5</th>
+            <td>Annika Mcbride</td>
+            <td>annika Mcbride@mail.com</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">#6</th>
+            <td>Fatimah Clark</td>
+            <td>fatimah clark@mail.com</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">#7</th>
+            <td>Klaudia Rhodes</td>
+            <td>klaudia rhodes@mail.com</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">#8</th>
+            <td>Tillie Lucero</td>
+            <td>tillie lucero@mail.com</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">#9</th>
+            <td>sabrina stephenson</td>
+            <td>sabrina stephenson@mail.com</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">#10</th>
+            <td>Annie Smith</td>
+            <td>annie smith@mail.com</td>
+            <td>Yes</td>
+          </tr>
+        </tbody>
+      </table>
+      
+</main>
+
+  <!-- <footer class="footer">
+    footer
+  </footer> -->
+</div>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>   
+
+</body>
+
+</html>
